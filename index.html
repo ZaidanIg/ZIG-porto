@@ -1,235 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="assets/styles/style.css" rel="stylesheet">
-    </head>
-    <body>
-    <header>
-        <nav class="navbar" id="navbar-wrap">
-            <h3 class="logo-brand"><a href="">My Porto</a></h3>
-            <div>
-                <ul class="nav-items">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Zaidan Ikhsan Gumilar, Full Stack Developer building web applications, business systems, and cloud-ready solutions.">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>Zaidan Ikhsan Gumilar | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="assets/styles/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo-brand" href="#home">ZIG<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <ul class="nav-items" id="nav-items">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Get in touch <span>↗</span></a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!--Hamburger Menu-->
-        <nav id="hamburger-nav">
-            <h3 class="logo-brand"><a href="">My Porto</a></h3>
-            <div class="hamburger-menu">
-                <div class="hamburger-icons" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                    <div class="hamburger-items">
-                        <li><a href="#about" onclick="toggleMenu()">About</a ></li>
-                        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                    </div>
-            </div>
-        </nav>
-    </header>
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> FULL STACK DEVELOPER · INDONESIA</p>
+        <h1>Building digital products that <em>solve real problems.</em></h1>
+        <p class="hero-description">I'm Zaidan Ikhsan Gumilar, a full stack developer focused on web applications, practical business systems, and reliable technology that helps teams work better.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#projects">Explore my work <span>↘</span></a>
+          <a class="button button-light" href="assets/ZAIDAN%20IKHSAN%20GUMILAR-resume.pdf" target="_blank" rel="noopener">View résumé <span>↗</span></a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/ZaidanIg" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/zaidan-ikhsan-gumilar-8a33aa252/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:zaidanikhsan.g@gmail.com">Email ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-frame"><img src="assets/images/hero-person-tr.png" alt="Portrait illustration of Zaidan Ikhsan Gumilar"></div>
+        <div class="floating-note note-top"><span>01 / BUILD</span><strong>From idea to application</strong></div>
+        <div class="floating-note note-bottom"><span>02 / IMPROVE</span><strong>Systems made for people</strong></div>
+        <div class="visual-index">PORTFOLIO — 2026</div>
+      </div>
+    </section>
 
-    <main>
-        <section id="hero-container">
-                <div class="hero-image">
-                    <img src="assets/images/hero-person.png" alt="">
-                </div>
-                <div class="hero-text">   
-                    <p class="text-1">
-                        Hello, I'm
-                    </p>
-                    <h1 class="title">ZAIDAN IKHSAN GUMILAR</h1>
-                    <p class="text-2">Junior DevOps</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color1" button onclick="window.open('./assets/ZAIDAN IKHSAN GUMILAR-resume.pdf')">Download CV</button>
-                        <button class="btn btn-color2" onclick="location.href='./#contact'">Contact Me</button>
-                    </div>
-                    <div id="socials-container">
-                        <img src="./assets/images/linkedin.png" class="icon" alt="icon" onclick="location.href='https://www.linkedin.com/in/zaidan-ikhsan-gumilar-8a33aa252/'">
-                        <img src="./assets/images/github.png" class="icon" alt="icon" onclick="location.href='https://github.com/ZaidanIg'">
-                        <img src="./assets/images/instagram.png" class="icon" alt="icon" onclick="location.href='https://www.instagram.com/sgm_zai/'">
-                    </div>
-                </div>
-        </section>
+    <section class="intro section-wrap" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Technical thinking.<br><em>Product-minded execution.</em></h2>
+      </div>
+      <div class="intro-content">
+        <p class="lead">I work across the stack, from shaping application architecture and data models to building interfaces and deploying web applications.</p>
+        <p>After earning my Bachelor's degree in Information Technology from Universitas Sebelas April, I have continued to build systems for different needs, including wedding services, community information, and school management. I enjoy understanding the problem behind a request, translating it into a clear solution, and improving the details that make software useful in everyday work.</p>
+        <div class="quick-facts">
+          <div><span class="fact-number">01</span><span>Full Stack Development</span></div>
+          <div><span class="fact-number">02</span><span>Cloud & Deployment</span></div>
+          <div><span class="fact-number">03</span><span>Product & Project Thinking</span></div>
+        </div>
+      </div>
+    </section>
 
-        <section id="about">
-            <div class="about-title">
-                <h1 class="title">About Me</h1>
-            </div>             
-                <div class="about-container">
-                    <aside class="about-profil-container">
-                        <img src="./assets/images/profile2.jpeg" alt="Zaidan" class="about-pic">
-                    </aside>
-                    <div class="about-details-container">
-                        <div class="about-container">
-                            <div class="details-container">
-                                <img src="./assets/images/quality.png"   class="icon" alt="icon">
-                                
-                                
-                                <h3>Experience</h3>
-                                <p>Pernah Magang di PT.SAWALA sebagai Junior DevOps selama 6 bulan</p>
-                        </div>
-                        <div class="details-container">
-                            <img src="./assets/images/graduation-cap.png" class="icon" alt="icon">
-                            
-                            
-                            <h3>Education</h3>
-                            <p>Saat ini merupakan seorang Mahasiswa S1 di Universitas Sebelas April Sumedang</p>
-                        </div>
-                    </div>
-                    <article class="text-container">
-                        <p>
-                            Saya adalah Zaidan Ikhsan Gumilar, sering dipanggil Agim atau Zaidan, seorang mahasiswa aktif di Universitas Sebelas April Sumedang (UNSAP). Saat ini, saya sedang menjalani program beasiswa MSIB Batch 7 di BANGKIT, dengan fokus pada Cloud Computing.
-                            
-                            Dengan minat yang mendalam pada teknologi, khususnya dalam bidang Cloud Computing, saya berkomitmen untuk mengembangkan keterampilan dan pengetahuan di jalur DevOps dan Backend Engineering. Saya percaya bahwa melalui pembelajaran ini, saya dapat berkontribusi dalam menciptakan solusi yang efisien dan inovatif di dunia teknologi.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
+    <section class="experience section-wrap" id="experience">
+      <div class="section-topline"><p class="eyebrow">WHERE I'VE WORKED</p><span class="section-count">01 — EXPERIENCE</span></div>
+      <div class="experience-list">
+        <article class="experience-item">
+          <div class="experience-date">Sep 2025 — Present</div>
+          <div class="experience-main"><h3>Full Stack Developer / Project Manager</h3><p class="company">Artefact Tech</p><p>Coordinate web development projects, shape application architecture, design user experiences in Figma, and contribute across frontend and backend development while coordinating the team.</p></div>
+          <span class="experience-tag">Web Development</span>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">Project-based</div>
+          <div class="experience-main"><h3>Full Stack Developer</h3><p class="company">Sahinaja · <a href="https://sahinaja.com" target="_blank" rel="noopener">sahinaja.com ↗</a></p><p>Developing a wedding invitation and service platform, with a focus on delivering an accessible digital experience for wedding-related businesses and their customers.</p></div>
+          <span class="experience-tag">Product Development</span>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">Project-based</div>
+          <div class="experience-main"><h3>Full Stack Developer</h3><p class="company">KIM Rancakalong · <a href="https://kimrancakalong.com" target="_blank" rel="noopener">kimrancakalong.com ↗</a></p><p>Building a community information platform to support the discovery of local information, village initiatives, and small-business opportunities in Rancakalong.</p></div>
+          <span class="experience-tag">Community Platform</span>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">Jan 2026 — Apr 2026</div>
+          <div class="experience-main"><h3>IT Manager</h3><p class="company">PT Kencana Lima Delapan</p><p>Developed and coordinated business systems including POS, reservations, employee attendance, and inventory, while also managing operational network infrastructure across business units.</p></div>
+          <span class="experience-tag">Business Systems</span>
+        </article>
+        <article class="experience-item">
+          <div class="experience-date">Feb 2024 — Jul 2024</div>
+          <div class="experience-main"><h3>Junior DevOps Intern</h3><p class="company">PT Sawala</p><p>Supported server management, website deployments, server maintenance, and CI/CD pipeline implementation using GitHub Actions.</p></div>
+          <span class="experience-tag">DevOps</span>
+        </article>
+      </div>
+    </section>
 
-        <section id="skills">
-            <div class="skill-title">
-                <p class="text1">Explore My</p>
-                <h1>Experiences</h1>
-            </div>
-            <div class="experience-details-container">
-                <div class="about-container">
-                    <div class="details-container">
-                        <div class="experience-sub-title">Backend</div>
-                        <div class="article-container">
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>NodeJs</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>ExpressJs</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
+    <section class="projects section-wrap" id="projects">
+      <div class="section-topline"><p class="eyebrow">SELECTED WORK</p><span class="section-count">02 — PROJECTS</span></div>
+      <div class="projects-heading"><h2>A few things<br><em>I've been building.</em></h2><p>A selection of products and systems that reflect my work across application development, workflow design, and technology infrastructure.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-visual visual-sahinaja"><span class="visual-label">01 / WEDDING PLATFORM</span><div class="mock-window"><div class="mock-top"><i></i><i></i><i></i><span>sahinaja.com</span></div><div class="mock-content"><span class="mock-kicker">YOUR DAY, YOUR STORY</span><strong>Make every moment<br>meaningful.</strong><div class="mock-line"></div><span class="mock-small">Invitations · Events · Wedding services</span></div></div></div>
+          <div class="project-meta"><span>FULL STACK DEVELOPMENT</span><span>01</span></div>
+          <h3>Sahinaja</h3><p>A digital wedding platform designed around wedding invitations and related services. Focused on creating a more organized online experience for couples and wedding-service providers.</p>
+          <div class="tag-row"><span>Next.js</span><span>Web Application</span><span>Product UX</span></div>
+          <a class="text-link" href="https://sahinaja.com" target="_blank" rel="noopener">Visit project <span>↗</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-kim"><span class="visual-label">02 / COMMUNITY PLATFORM</span><div class="kim-art"><div class="kim-sun"></div><div class="kim-hill hill-one"></div><div class="kim-hill hill-two"></div><div class="kim-house">KIM<br><small>RANCAKALONG</small></div></div></div>
+          <div class="project-meta"><span>WEB PLATFORM</span><span>02</span></div>
+          <h3>KIM Rancakalong</h3><p>A community information platform built to help connect local information, village initiatives, and UMKM opportunities with the wider community.</p>
+          <div class="tag-row"><span>Next.js</span><span>PostgreSQL</span><span>Community</span></div>
+          <a class="text-link" href="https://kimrancakalong.com" target="_blank" rel="noopener">Visit project <span>↗</span></a>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-school"><span class="visual-label">03 / EDUCATION TECHNOLOGY</span><div class="school-dashboard"><div class="dash-sidebar"><b>SC.</b><i></i><i></i><i></i><i></i></div><div class="dash-main"><span class="dash-greeting">SCHOOL MANAGEMENT</span><strong>Learning, organized.</strong><div class="dash-stats"><i></i><i></i><i></i></div><div class="dash-table"><b></b><b></b><b></b><b></b></div></div></div></div>
+          <div class="project-meta"><span>IN DEVELOPMENT</span><span>03</span></div>
+          <h3>School Management System</h3><p>A school management project in development, designed around clear role separation for administrators, teachers, and students, with class-based access to relevant information and content.</p>
+          <div class="tag-row"><span>TypeScript</span><span>Next.js</span><span>Role-based Access</span></div>
+          <a class="text-link" href="https://github.com/ZaidanIg/dashboard-school-management" target="_blank" rel="noopener">View source code <span>↗</span></a>
+        </article>
+      </div>
+    </section>
 
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>Postgres</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                    
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>Postman</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                                
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>Prisma</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                                
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>Javascript</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                    
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <div class="experience-sub-title">DevOps</div>
-                        <div class="article-container">
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>GIT</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>AWS</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>Kubernetes</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
+    <section class="skills section-wrap" id="skills">
+      <div class="section-topline"><p class="eyebrow">TOOLS OF THE TRADE</p><span class="section-count">03 — SKILLS</span></div>
+      <div class="skills-layout">
+        <h2>The right tool<br><em>for the problem.</em></h2>
+        <div class="skill-groups">
+          <div class="skill-group"><h3>Frontend</h3><div class="skill-pills"><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>Figma</span></div></div>
+          <div class="skill-group"><h3>Backend & Data</h3><div class="skill-pills"><span>Node.js</span><span>NestJS</span><span>Express.js</span><span>Hapi.js</span><span>PostgreSQL</span><span>Prisma</span><span>REST API</span></div></div>
+          <div class="skill-group"><h3>Cloud & Delivery</h3><div class="skill-pills"><span>Google Cloud</span><span>AWS</span><span>Docker</span><span>GitHub Actions</span><span>CI/CD</span><span>Vercel</span><span>Linux</span></div></div>
+          <div class="skill-group"><h3>Ways of Working</h3><div class="skill-pills"><span>System Design</span><span>Project Management</span><span>Problem Solving</span><span>Team Coordination</span></div></div>
+        </div>
+      </div>
+    </section>
 
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>Github</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                                
-                            <article>
-                                <img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>Github Action</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                                
-                            <article><img src="./assets/images/accept.png" alt="icon" class="icon">
-                                <div>
-                                    <H3>Vercel</H3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <section id="contact">
-            <div class="contact-title">
-                <p class="text1">How to Contact me</p>
-                <h1 class="title">Contact Me</h1>
-            </div>
-            <div class="contact-info-upper-container">
-                <div class="contact-container">
-                    <img src="./assets/images/email.png" alt="icon" class="icon contact-icon email-icon">
-                    <p><a href="mailto:zerreff.io@gmail.com">zerreff.io@gmail.com</a></p>
-                </div>
-                <div class="contact-container">
-                    <img src="./assets/images/linkedin.png" alt="icon" class="icon contact-icon email-icon">
-                    <p><a href="https://www.linkedin.com/in/zaidan-ikhsan-gumilar-8a33aa252/">Zaidan Ikhsan Gumilar</a></p>
-                </div>
-            </div>
-            <div class="btn-container">
-                <button class="btn btn-color1">Download CV</button>
-            </div>
-            <p>Copyright &#169; 2024 Zaidan ikhsan Gumilar. All Rights Reserved.</p>
-        </section>
-    </footer>
-    <script src="assets/scripts/script.js"></script>
-    </body>
+    <section class="contact section-wrap" id="contact">
+      <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+      <h2>Let's make something<br><em>useful together.</em></h2>
+      <p class="contact-copy">I’m interested in thoughtful products, meaningful engineering challenges, and opportunities to build systems that make work simpler.</p>
+      <div class="hero-actions"><a class="button button-dark" href="mailto:zaidanikhsan.g@gmail.com">Get in touch <span>↗</span></a><a class="button button-light" href="https://github.com/ZaidanIg" target="_blank" rel="noopener">Explore GitHub <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="logo-brand" href="#home">ZIG<span>.</span></a><p>Designed and built by Zaidan Ikhsan Gumilar</p><p>© 2026 · Built with care and code.</p></footer>
+  <script src="assets/scripts/script.js"></script>
+</body>
 </html>
